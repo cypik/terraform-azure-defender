@@ -23,7 +23,7 @@ for creating AZURE resources, and you can customize the inputs as needed. Below 
 
 ```hcl
 module "defender" {
-  source      = "../"
+  source      = "git::https://github.com/opz0/terraform-azure-defender.git?ref=v1.0.0"
   resource_id = module.storage.default_storage_account_id
 }
 ```
