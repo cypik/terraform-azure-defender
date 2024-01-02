@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 module "resource_group" {
-  source      = "git::https://github.com/opz0/terraform-azure-resource-group.git?ref=v1.0.0"
+  source      = "git::https://github.com/cypik/terraform-azure-resource-group.git?ref=v1.0.0"
   name        = "app"
   environment = "test"
   location    = "North Europe"
@@ -11,7 +11,7 @@ module "resource_group" {
 
 ##    Storage Account
 module "storage" {
-  source                        = "git::https://github.com/opz0/terraform-azure-storage.git?ref=v1.0.0"
+  source                        = "git::https://github.com/cypik/terraform-azure-storage.git?ref=v1.0.0"
   name                          = "app"
   environment                   = "test"
   default_enabled               = true
